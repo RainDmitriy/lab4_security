@@ -1,0 +1,60 @@
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow);
+  padding: 1rem;
+  margin: 1rem 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.skeletonCard {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.skeletonTitle {
+  height: 24px;
+  background: var(--primary-lightest);
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  width: 70%;
+}
+
+.skeletonText {
+  height: 16px;
+  background: var(--primary-light);
+  border-radius: 4px;
+  margin-bottom: 0.25rem;
+  width: 100%;
+}
+
+.skeletonText:nth-child(2) {
+  width: 80%;
+}
+
+.skeletonText:nth-child(3) {
+  width: 60%;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, var(--primary-lightest) 25%, var(--primary-light) 50%, var(--primary-lightest) 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite linear;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
