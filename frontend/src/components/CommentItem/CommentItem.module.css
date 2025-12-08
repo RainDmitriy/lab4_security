@@ -1,0 +1,97 @@
+.commentItem {
+  padding: 1rem;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 1px 4px var(--shadow);
+}
+
+.commentAuthor {
+  font-weight: 500;
+  color: var(--primary-dark);
+  margin-bottom: 0.25rem;
+}
+
+.commentDate {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.commentText {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.commentTextEditable {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.commentTextEditable:hover {
+  background-color: var(--bg-primary);
+  border-radius: 4px;
+  padding: 0.25rem;
+}
+
+.editInput {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  resize: vertical;
+}
+
+.editButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.saveButton {
+  background: var(--primary-mid);
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease;
+}
+
+.saveButton:hover {
+  background: var(--primary-dark);
+}
+
+.cancelButton {
+  background: var(--text-secondary);
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease;
+}
+
+.cancelButton:hover {
+  background: var(--primary-dark);
+}
+
+.deleteButton {
+  background: transparent;
+  color: red;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.deleteButton:hover {
+  color: darkred;
+}
