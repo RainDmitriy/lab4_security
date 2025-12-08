@@ -1,0 +1,91 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.formTitle {
+  font-size: 1.5rem;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: var(--primary-mid);
+  box-shadow: 0 0 0 2px rgba(87, 127, 205, 0.2);
+}
+
+.submitButton {
+  background: linear-gradient(135deg, var(--primary-mid), var(--primary-dark));
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.submitButton:hover {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary-deepest));
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(37, 63, 124, 0.3);
+}
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.linkContainer {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--text-secondary);
+}
+
+.linkContainer a {
+  color: var(--primary-mid);
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.linkContainer a:hover {
+  text-decoration: underline;
+}

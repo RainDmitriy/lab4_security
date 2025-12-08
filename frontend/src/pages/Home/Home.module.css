@@ -1,0 +1,91 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.btnGradient {
+  background: linear-gradient(135deg, var(--primary-mid), var(--primary-dark));
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  margin: 1rem;
+}
+
+.btnGradient:hover {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary-deepest));
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(37, 63, 124, 0.3);
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: var(--primary-mid);
+  box-shadow: 0 0 0 2px rgba(87, 127, 205, 0.2);
+}
+
+.newsListSkeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skeletonCard {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.skeletonTitle {
+  height: 24px;
+  background: var(--primary-lightest);
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  width: 70%;
+}
+
+.skeletonText {
+  height: 16px;
+  background: var(--primary-light);
+  border-radius: 4px;
+  margin-bottom: 0.25rem;
+  width: 100%;
+}
+
+.skeletonText:nth-child(2) {
+  width: 80%;
+}
+
+.skeletonText:nth-child(3) {
+  width: 60%;
+}
